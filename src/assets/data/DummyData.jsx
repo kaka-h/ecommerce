@@ -3,6 +3,7 @@ import kaos2 from '../image/kaos2.jpeg'
 import kaos3 from '../image/kaos3.jpeg'
 import kaos4 from '../image/kaos4.jpeg'
 
+
 export const DummyData = [
     {
         id: 0,
