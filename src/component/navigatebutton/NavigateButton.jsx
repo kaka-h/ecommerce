@@ -10,7 +10,7 @@ const NavigateButton = () => {
 
     return (
         <div>
-            <div className="flex items-center justify-center py-8">
+            <div className=" flex justify-center flex-wrap py-8 md:gap-0 gap-5">
                 {buttons.map ((data, index) => (
                         <div key={index} className='mr-4'>
                         <Link to={`/filteredproducts/` + data}>
@@ -21,11 +21,11 @@ const NavigateButton = () => {
                         </div>
                     ))}
             </div>
-            <div className="bg-green-200 p-2 w-[55%] mx-auto rounded-md">
+            <div className="bg-green-400 p-2 w-[55%] mx-auto rounded-md">
                 <h3 className="text-red-900 text-center text-lg font-inter font-bold tracking-normal leading-none">SALES UP TO 50%</h3>
             </div>
             <div className="flex justify-center items-center py-4">
-                <img className="h-[600px] w-[70%] rounded-md shadow-lg shadow-gray-600" src={clothes} alt="clothes" />
+                <img className="md:h-[600px] md:w-[70%] h-96 w-96 rounded-md shadow-lg shadow-gray-600" src={clothes} alt="clothes" />
             </div>
         </div>
     )

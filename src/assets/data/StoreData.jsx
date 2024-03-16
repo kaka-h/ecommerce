@@ -42,7 +42,7 @@ export const StoreData = [
         size: ['36', '38', '40', '42', '44'],
         color: ['Red', 'Blue', 'Green', 'Yellow'],
         gender: 'Unisex',
-        price: '$20',
+        price: 20,
     },
     {
         id: '2',
@@ -53,7 +53,7 @@ export const StoreData = [
         size: ['36', '38', '40', '42', '44'],
         color: ['Red', 'Blue', 'Green', 'Yellow'],
         gender: 'Unisex',
-        price: '$40',
+        price: 40,
     },
     {
         id: '3',
@@ -64,7 +64,7 @@ export const StoreData = [
         size: ['36', '38', '40', '42', '44'],
         color: ['Red', 'Blue', 'Green', 'Yellow'],
         gender: 'Unisex',
-        price: '$60',
+        price: 60,
     },
     {
         id: '4',
@@ -75,7 +75,7 @@ export const StoreData = [
         size: ['36', '38', '40', '42', '44'],
         color: ['Red', 'Blue', 'Green', 'Yellow'],
         gender: 'Unisex',
-        price: '$80',
+        price: 80,
     },
     {
         id: '5',
@@ -86,7 +86,7 @@ export const StoreData = [
         size: ['36', '38', '40', '42', '44'],
         color: ['Red', 'Blue', 'Green', 'Yellow'],
         gender: 'Unisex',
-        price: '$100',
+        price: 100,
     },
     {
         id: "6",
@@ -97,7 +97,7 @@ export const StoreData = [
         size: ["XL", "L", "M", "S"],
         color: ["black", "gray", "green"],
         gender: "male",
-        price: '$45',
+        price: 45,
     },
     {
         id: "7",
@@ -108,7 +108,7 @@ export const StoreData = [
         size: ["M", "L", "XL"],
         color: ["black", "red", "brown"],
         gender: "male",
-        price: '$55',
+        price: 55,
     },
     {
         id: "8",
@@ -119,7 +119,7 @@ export const StoreData = [
         size: ["L", "XL"],
         color: ["brown", "gray", "yellow"],
         gender: "female",
-        price: '$75',
+        price: 75,
     },
     {
         id: "9",
@@ -130,7 +130,7 @@ export const StoreData = [
         size: ["M", "L", "XL"],
         color: ["gray", "orange", "blue"],
         gender: "female",
-        price: '$25',
+        price: 25,
     },
     {
         id: "10",
@@ -141,7 +141,7 @@ export const StoreData = [
         size: ["S", "L", "XL"],
         color: ["blue", "red", "green"],
         gender: "female",
-        price: '$85',
+        price: 85,
       },
       {
         id: "11",
@@ -152,7 +152,7 @@ export const StoreData = [
         size: ["S", "L", "XL"],
         color: ["gray", "purple", "black"],
         gender: "female",
-        price: '$95',
+        price: 95,
       },
       {
         id: "12",
@@ -163,7 +163,7 @@ export const StoreData = [
         size: ["S", "M", "XL"],
         color: ["red", "blue", "black"],
         gender: "male",
-        price: '$95',
+        price: 95,
       },
       {
         id: "13",
@@ -174,7 +174,7 @@ export const StoreData = [
         size: ["S", "XL"],
         color: ["gray", "blue", "red"],
         gender: "male",
-        price: '$125',
+        price: 125,
       },
       {
         id: "14",
@@ -185,7 +185,7 @@ export const StoreData = [
         size: ["L", "XL"],
         color: ["purple", "blue", "gray"],
         gender: "female",
-        price: '$355',
+        price: 355,
       },
       {
         id: "15",
@@ -196,7 +196,7 @@ export const StoreData = [
         size: ["S", "M", "XL"],
         color: ["black", "gray", "green"],
         gender: "female",
-        price: '$255',
+        price: 255,
       },
       {
         id: "16",
@@ -207,7 +207,7 @@ export const StoreData = [
         size: ["S", "M", "XL"],
         color: ["purple", "blue", "red"],
         gender: "female",
-        price: '$65',
+        price: 65,
       },
       {
         id: "17",
@@ -218,7 +218,7 @@ export const StoreData = [
         size: ["S", "L", "XL"],
         color: ["yellow", "blue", "orange"],
         gender: "female",
-        price: '$185',
+        price: 185,
       },
       {
         id: "18",
@@ -229,7 +229,7 @@ export const StoreData = [
         size: ["S", "M", "L"],
         color: ["blue", "black"],
         gender: "male",
-        price: '$55',
+        price: 55,
       },
       {
         id: "19",
@@ -240,7 +240,7 @@ export const StoreData = [
         size: ["S", "M"],
         color: ["blue", "black"],
         gender: "female",
-        price: '$75',
+        price: 75,
       },
       {
         id: "20",
@@ -251,7 +251,7 @@ export const StoreData = [
         size: ["M", "L", "XL"],
         color: ["blue", "black"],
         gender: "male",
-        price: '$95',
+        price: 95,
       },
       {
         id: "21",
@@ -262,7 +262,7 @@ export const StoreData = [
         size: ["M", "L", "XL"],
         color: ["blue", "black"],
         gender: "female",
-        price: '$100',
+        price: 100,
       },
       {
         id: "22",
@@ -273,7 +273,7 @@ export const StoreData = [
         size: ["M", "L", "XL"],
         color: ["black", "blue"],
         gender: "male",
-        price: '$400',
+        price: 400,
       },
       {
         id: "23",
@@ -284,7 +284,7 @@ export const StoreData = [
         size: ["S", "L", "XL"],
         color: ["gray", "brown"],
         gender: "male",
-        price: '$255',
+        price: 255,
       },
       {
         id: "24",
@@ -295,7 +295,7 @@ export const StoreData = [
         size: ["S", "M"],
         color: ["gray", "brown"],
         gender: "male",
-        price: '$300',
+        price: 300,
       },
       {
         id: "25",
@@ -306,7 +306,7 @@ export const StoreData = [
         size: ["S", "M", "L"],
         color: ["gray", "brown"],
         gender: "male",
-        price: '$185',
+        price: 185,
       },
       {
         id: "26",
@@ -316,7 +316,7 @@ export const StoreData = [
         type: "Bags",
         color: ["black", "blue", "red"],
         gender: "female",
-        price: '$500',
+        price: 500,
       },
       {
         id: "27",
@@ -326,7 +326,7 @@ export const StoreData = [
         type: "Bags",
         color: ["green", "red", "blue"],
         gender: "male",
-        price: '$85',
+        price: 85,
       },
       {
         id: "28",
@@ -336,7 +336,7 @@ export const StoreData = [
         type: "Bags",
         color: ["brown", "blue", "orange"],
         gender: "female",
-        price: '$200',
+        price: 200,
       },
       {
         id: "29",
@@ -346,7 +346,7 @@ export const StoreData = [
         type: "Bags",
         color: ["brown", "blue", "orange"],
         gender: "female",
-        price: '$25',
+        price: 25,
       },
       {
         id: "30",
@@ -357,7 +357,7 @@ export const StoreData = [
         size: ["S", "M", "L"],
         color: ["black", "gray", "orange"],
         gender: "male",
-        price: '$300',
+        price: 300,
       },
       {
         id: "31",
@@ -368,7 +368,7 @@ export const StoreData = [
         size: ["S", "M", "L"],
         color: ["purple", "orange", "gray"],
         gender: "male",
-        price: '$400',
+        price: 400,
       },
       {
         id: "32",
@@ -379,7 +379,7 @@ export const StoreData = [
         size: ["M", "L", "XL"],
         color: ["purple", "orange", "gray"],
         gender: "male",
-        price: '$200',
+        price: 200,
       },
       {
         id: "33",
@@ -390,6 +390,6 @@ export const StoreData = [
         size: ["L", "XL"],
         color: ["brown", "orange", "black"],
         gender: "male",
-        price: '$600',
+        price: 600,
       },
 ]

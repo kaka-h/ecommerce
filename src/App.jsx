@@ -9,7 +9,7 @@ function App() {
   const totalPrice = useSelector((state) => state.cart.totalPrice)
   const totalAmount = useSelector((state) => state.cart.totalAmount)
 
-  console.log('totalPrice', totalPrice)
+  console.log('totalPrice', `$${totalPrice}`)
   console.log('totalAmount', totalAmount)
   // console.log('cart', cart)
 

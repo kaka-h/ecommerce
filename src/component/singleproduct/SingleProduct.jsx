@@ -9,7 +9,7 @@ const SingleProduct = () => {
   const { id } = useParams()
   const product = useSelector((state) => state.filtered.singleProduct)
   const productSize = product[0].size  ? product[0].size[0] : null;
-  const productColor = product[0].color  ? product[0].color[0] : null;
+  const productColor = product[0].color[0]
   const [color, setColor] = useState(productColor)
   const [size, setSize] = useState(productSize)
   // console.log('size', size)
@@ -21,11 +21,11 @@ const SingleProduct = () => {
   return (
     <div>
       {product.filter ((data) => data.id === id).map((data, index) => (
-        <div key={index}  className='flex justify-center items-center py-10'>
-          <div className='pl-44 grow-[2]'>
-            <img src={data.image} className='h-[850px] rounded-lg' alt="" />
+        <div key={index}  className='flex md:flex-row flex-col items-center md:pt-32 md:pl-36'>
+          <div className='flex md:justify-center grow-[2] md:pt-0 pt-36'>
+            <img src={data.image} className='w-96 rounded-lg' alt="" />
           </div>
-          <div className='grow-[3]'>
+          <div className='grow-[3] p-8'>
             <div className='max-w-lg'>
               <h5 className='text-2xl font-inter font-bold tracking-normal leading-none pb-4'>{data.name}</h5>
               <p className="text-orange-700 text-xl font-inter font-bold tracking-normal leading-none pb-4">15% OFF</p>
@@ -71,6 +71,8 @@ const SingleProduct = () => {
                   amount: 1,
                   price: data.price,
                   totalPrice: data.price,
+                  image: data.image,
+                  text: data.text,
                   id: data.id,
                   size: size,
                   color: color,
