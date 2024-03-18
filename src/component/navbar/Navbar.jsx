@@ -3,15 +3,21 @@ import Cart from '../cart/Cart';
 import logo from '../../assets/image/logo.png'
 import WishList from '../../assets/icon/wishlist';
 import Bag from '../../assets/icon/bag';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from '../../features/slice/authslice';
+import { Avatar, Tooltip, Button } from '@material-tailwind/react';
 
 const Navbar = () => {
     const totalAmount = useSelector((state) => state.cart.totalAmount)
+    const user = useSelector((state) => state.auth.user)
+    const { name, image } = user
     const [open, setOpen] = useState(false)
+    const dispatch = useDispatch()
     
     const handleOpen = () => {
         setOpen(true)
     }
+
     return (
         <nav>
             <div className="p-2 w-full bg-black">
@@ -37,9 +43,16 @@ const Navbar = () => {
                             {open && <Cart openModal={open} setOpen={setOpen}></Cart>}
                         </div>
                     </div>
-                    <button className='font-inter border border-1 md:text-lg text-sm font-medium mr-4'>
-                        Logout
-                    </button>
+                    <div className='flex flex-row items-center cursor-pointer pl-4'>
+                        {image && (<Avatar src={image} alt='avatar' size='sm' className='mr-2'></Avatar>)}
+                        <div onClick={() => dispatch(logout())}>
+                            <Tooltip content='Sign Out' placement='bottom'>
+                                <p className='font-inter text-sm font-medium'>
+                                    Hi {name.charAt('0').toUpperCase() + name.slice(1)}
+                                </p>
+                            </Tooltip>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className='w-full p-4 flex justify-around bg-black'>
