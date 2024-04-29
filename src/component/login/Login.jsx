@@ -28,11 +28,11 @@ const Login = () => {
     const dispatch = useDispatch();
 
     return (
-        <div className="h-screen flex justify-center items-center">
+        <div className="h-screen flex flex-col justify-center items-center">
             <Card className="w-96">
                 <CardHeader
                     variant="gradient"
-                    color="gray"
+                    color="blue"
                     className="mb-4 grid h-28 place-items-center"
                 >
                     <Typography variant="h3" color="white">
@@ -48,12 +48,20 @@ const Login = () => {
                     </div>
                 </CardBody>
                 <CardFooter className="pt-0">
-                    <Button onClick={() => dispatch(login(user))} variant="gradient" fullWidth>
+                    <Button onClick={() => dispatch(login(user))} color="blue" variant="gradient" fullWidth>
                     Sign In
                     </Button>
-                    <Typography variant="small" className="mt-6 flex justify-center">
-                        Image is optional
-                    </Typography>
+                    <div className="flex justify-between">
+                        <Typography className="text-xs mt-6 flex justify-center">
+                            Name: Admin
+                        </Typography>
+                        <Typography className="text-xs mt-6 flex justify-center">
+                            Password: Admin123#
+                        </Typography>
+                        <Typography className="text-xs mt-6 flex justify-center">
+                            Image is optional
+                        </Typography>
+                    </div>
                 </CardFooter>
             </Card>
         </div>
